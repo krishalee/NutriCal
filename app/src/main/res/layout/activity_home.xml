@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/himageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundRectView"
+        app:srcCompat="@drawable/homeicon" />
+
+    <TextView
+        android:id="@+id/htextView2"
+        android:layout_width="63dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="Home"
+        android:textColor="#5D4AC8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/himageView2"
+        app:layout_constraintTop_toTopOf="@+id/himageView2" />
+
+    <ImageButton
+        android:id="@+id/homeadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundRectView"
+        app:srcCompat="@drawable/newaddbuttonnn" />
+
+    <ImageButton
+        android:id="@+id/homechart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/edittext_corner"
+        android:backgroundTint="#4BFF8F00"
+        android:drawableTop="@drawable/ic_chart"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/roundRectView2"
+        app:layout_constraintEnd_toStartOf="@+id/homehistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="1"
+        app:srcCompat="@drawable/caloriechart" />
+
+    <ImageButton
+        android:id="@+id/homehistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/edittext_corner"
+        android:backgroundTint="#405CCB4E"
+        android:drawableTop="@drawable/ic_history"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/roundRectView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/homechart"
+        app:layout_constraintVertical_weight="1"
+        app:srcCompat="@drawable/history" />
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/roundRectView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_roundRect_borderColor="#6A8E30"
+        android:elevation="20dp"
+        app:shape_roundRect_borderWidth="0dp"
+        app:shape_roundRect_bottomLeftRadius="50dp"
+        app:shape_roundRect_bottomRightRadius="50dp"
+        app:shape_roundRect_topLeftRadius="0dp"
+        app:shape_roundRect_topRightRadius="0dp"
+        tools:ignore="ExtraText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#5CCB4E"
+            android:elevation="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/carrot" />
+
+            <ProgressBar
+                android:id="@+id/bmrProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="114dp"
+                android:progressDrawable="@drawable/progressbar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/percent"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="(%)"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/bmrProgress"
+                app:layout_constraintStart_toEndOf="@+id/bmrProgress"
+                app:layout_constraintTop_toTopOf="@+id/bmrProgress"
+                 />
+
+            <TextView
+                android:id="@+id/home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="91dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="88dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="(name)'s Calorie Counter"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/todaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Today"
+                android:textColor="@color/genColor"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/bmrProgress"
+                app:layout_constraintTop_toBottomOf="@+id/bmrProgress" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Target"
+                android:textColor="@color/genColor"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/todaytext"
+                app:layout_constraintTop_toTopOf="@+id/todaytext" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Left"
+                android:textColor="@color/genColor"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/todayCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="(today\nkCal)"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/todaytext"
+                app:layout_constraintStart_toStartOf="@+id/todaytext"
+                app:layout_constraintTop_toBottomOf="@+id/todaytext" />
+
+            <TextView
+                android:id="@+id/targetCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="3dp"
+
+                android:fontFamily="@font/quicksand_medium"
+                android:text="(target kCal)"
+                android:textColor="@color/genColor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView30"
+                app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+            <TextView
+                android:id="@+id/leftCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="(left kCal)"
+                android:textColor="@color/genColor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/textView31"
+                app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/roundRectView2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0dp"
+        app:shape_roundRect_bottomLeftRadius="0dp"
+        app:shape_roundRect_bottomRightRadius="0dp"
+        app:shape_roundRect_topLeftRadius="0dp"
+        app:shape_roundRect_topRightRadius="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#5D4AC8"
+            android:elevation="20dp">
+
+
+            <Button
+                android:id="@+id/btn_home"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_baseline_home_32"
+                android:enabled="false"
+                android:text="Home"
+                android:textAlignment="inherit"
+                android:textColor="#5D4AC8"
+                android:textSize="16sp"
+                app:backgroundTint="#FFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/homebtn_profile"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/homebtn_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_baseline_account_circle_32"
+                app:backgroundTint="#5D4AC8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/homebtn_info"
+                app:layout_constraintHorizontal_weight="0"
+                app:layout_constraintStart_toEndOf="@+id/btn_home"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/homebtn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_baseline_info_32"
+                app:backgroundTint="#5D4AC8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0"
+                app:layout_constraintStart_toEndOf="@+id/homebtn_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/asap_medium"
+        android:text="Calorie Chart"
+        android:gravity="center"
+        android:background="@drawable/edittext_corner"
+        android:backgroundTint="#C3FF8F00"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/homechart"
+        app:layout_constraintEnd_toEndOf="@+id/homechart"
+        app:layout_constraintStart_toStartOf="@+id/homechart" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="110dp"
+        android:background="@drawable/edittext_corner"
+        android:backgroundTint="#F25CCB4E"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/asap_medium"
+        android:text="History"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/homehistory"
+        app:layout_constraintEnd_toEndOf="@+id/homehistory"
+        app:layout_constraintStart_toStartOf="@+id/homehistory" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:enabled="false"
+        android:layout_height="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/roundRectView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/asap_medium"
+        android:text="Add Calorie"
+        android:gravity="center"
+        android:background="@drawable/edittext_corner"
+        android:backgroundTint="#DFFF216D"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/homeadd"
+        app:layout_constraintStart_toStartOf="@+id/homeadd"
+        app:layout_constraintTop_toBottomOf="@+id/homeadd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

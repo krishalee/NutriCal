@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NutriCal</string>
+    <string name="name">(name)</string>
+
+    <string-array name="AFarray">
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Moderately Active</item>
+        <item>Very Active</item>
+        <item>Extremely Active</item>
+    </string-array>
+    <string-array name="WArray">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+    <string-array name="HArray">
+        <item>cm</item>
+        <item>m</item>
+        <item>ft</item>
+        <item>in</item>
+    </string-array>
+</resources>

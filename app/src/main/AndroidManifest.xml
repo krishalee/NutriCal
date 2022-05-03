@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nutrical">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logov21"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logov21"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NutriCal">
+        <activity
+            android:name=".Fruit"
+            android:parentActivityName=".CalorieChart" />
+        <activity
+            android:name=".MeatProducts"
+            android:parentActivityName=".CalorieChart" />
+        <activity
+            android:name=".Vegetables"
+            android:parentActivityName=".CalorieChart" />
+        <activity
+            android:name=".Drink"
+            android:parentActivityName=".CalorieChart" />
+        <activity
+            android:name=".Snack"
+            android:parentActivityName=".CalorieChart" />
+        <activity
+            android:name=".CalorieChart"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".History"
+            android:parentActivityName=".Home" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Info" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Home" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <receiver
+            android:name=".MemoBroadcast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MemoBroadcast2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MemoBroadcast3"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".MemoBraodcastReset"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

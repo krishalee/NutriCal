@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:background="@drawable/round_caloriechart"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/titleIvS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="23.2 kCal"
+            android:textColor="#515151"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptopnTvS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: manok"
+            android:textSize="14sp"
+            android:textColor="#515151"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/titleIvS"/>
+        <TextView
+            android:id="@+id/dateTvs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="July 23, 2019 2:36PM"
+            android:textSize="14sp"
+            android:textColor="#515151"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/descriptopnTvS"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

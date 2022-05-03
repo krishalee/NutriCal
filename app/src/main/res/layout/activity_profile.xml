@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shape_roundRect_borderColor="@android:color/black"
+        app:shape_roundRect_borderWidth="0dp"
+        app:shape_roundRect_bottomLeftRadius="0dp"
+        app:shape_roundRect_bottomRightRadius="0dp"
+        app:shape_roundRect_topLeftRadius="0dp"
+        android:elevation="10dp"
+        app:shape_roundRect_topRightRadius="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#5D4AC8"
+            android:elevation="20dp">
+
+            <Button
+                android:id="@+id/profilebtn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#5D4AC8"
+                android:drawableTop="@drawable/ic_baseline_home_32white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_profile"
+                app:layout_constraintHorizontal_weight="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_32violet"
+                android:enabled="false"
+                android:text="Profile"
+                android:textColor="#5D4AC8"
+                android:textSize="16sp"
+                app:backgroundTint="#FFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/profilebtn_info"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/profilebtn_home"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/profilebtn_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_baseline_info_32"
+                app:backgroundTint="#5D4AC8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="0"
+                app:layout_constraintStart_toEndOf="@+id/btn_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+    <TextView
+        android:id="@+id/profiletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(name)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderpic" />
+
+    <TextView
+        android:id="@+id/prof_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(age)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profiletxt" />
+
+    <TextView
+        android:id="@+id/prof_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(weight)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/prof_age"
+        app:layout_constraintTop_toBottomOf="@+id/prof_age" />
+
+    <TextView
+        android:id="@+id/prof_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(height)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/prof_weight"
+        app:layout_constraintTop_toBottomOf="@+id/prof_weight" />
+
+    <TextView
+        android:id="@+id/prof_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(gender)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/prof_height"
+        app:layout_constraintTop_toBottomOf="@+id/prof_height" />
+
+    <TextView
+        android:id="@+id/prof_AF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(AF)"
+        android:textColor="@color/genColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/prof_gender"
+        app:layout_constraintTop_toBottomOf="@+id/prof_gender" />
+
+    <Button
+        android:id="@+id/prof_reset"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:backgroundTint="@color/warningButton"
+        app:icon="@drawable/ic_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profiletxt"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/proficon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="63dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/asap_medium"
+        android:text="Profile"
+        android:textColor="#5D4AC8"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/genderpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_profilepicture" />
+
+    <TextView
+        android:id="@+id/prof_bmr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bmi_round_corner"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="(bmr)"
+        android:elevation="15dp"
+        android:textColor="@color/genColor"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/prof_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profiletxt"
+        app:layout_constraintVertical_bias="0.818" />
+</androidx.constraintlayout.widget.ConstraintLayout>
